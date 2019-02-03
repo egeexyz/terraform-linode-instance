@@ -29,6 +29,11 @@ variable "type" {
 }
 
 variable "authorized_keys" {
-  description = "Your authorized key. Be sure to chomp() it first."
+  description = "Your authorized keys. Be sure to chomp() it first"
+  type        = "list"
+}
+
+variable "authorized_users" {
+  description = "Your authorized users"
   type        = "list"
 }
