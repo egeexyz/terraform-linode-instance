@@ -20,7 +20,7 @@ variable "image" {
 
 variable "label" {
   description = "Optional label to tag the instance with"
-  default     = ""
+  default     = "Created by Terraform"
 }
 
 variable "type" {
