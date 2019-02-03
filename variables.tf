@@ -28,7 +28,7 @@ variable "type" {
   default     = "g6-standard-4"
 }
 
-variable "authorized_key" {
+variable "authorized_keys" {
   description = "Your authorized key. Be sure to chomp() it first."
   type        = "list"
 }

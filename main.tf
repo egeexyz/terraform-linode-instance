@@ -3,7 +3,7 @@ resource "linode_instance" "instance" {
   image           = "${var.image}"
   region          = "${var.region}"
   type            = "${var.type}"
-  authorized_keys = ["${var.authorized_key}"]
+  authorized_keys = "${var.authorized_keys}"
   private_ip      = "${var.private_ip}"
   backups_enabled = "${var.backups_enabled}"
 }
