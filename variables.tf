@@ -37,3 +37,7 @@ variable "authorized_users" {
   description = "Your authorized users"
   type        = "list"
 }
+
+variable "stackscript_id" {
+  default = ""
+}
