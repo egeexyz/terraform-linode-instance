@@ -41,3 +41,8 @@ variable "authorized_users" {
 variable "stackscript_id" {
   default = ""
 }
+
+variable "stackscript_data" {
+  description = "Map of required StackScript UDF data."
+  type        = "map"
+}

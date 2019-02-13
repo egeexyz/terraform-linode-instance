@@ -8,4 +8,5 @@ resource "linode_instance" "instance" {
   private_ip       = "${var.private_ip}"
   backups_enabled  = "${var.backups_enabled}"
   stackscript_id   = "${var.stackscript_id}"
+  stackscript_data = "${var.stackscript_data}"
 }
