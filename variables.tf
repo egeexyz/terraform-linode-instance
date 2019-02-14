@@ -1,6 +1,6 @@
 variable "root_pass" {
   description = "The initial password for the root user account"
-  default     = "🔒🗝aaBB12.."
+  default     = "changeME007.."
 }
 
 variable "private_ip" {
