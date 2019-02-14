@@ -1,3 +1,8 @@
+variable "root_pass" {
+  description = "The initial password for the root user account"
+  default     = "🔒🗝️"
+}
+
 variable "private_ip" {
   description = "Whether or not you want a private ip address for your instance"
   default     = true
@@ -19,8 +24,14 @@ variable "image" {
 }
 
 variable "label" {
-  description = "Optional label to tag the instance with"
+  description = "Optional label to display for the instance"
   default     = "Created by Terraform"
+}
+
+variable "tags" {
+  description = "An optional list of tags"
+  type        = "list"
+  default     = []
 }
 
 variable "type" {
@@ -31,18 +42,21 @@ variable "type" {
 variable "authorized_keys" {
   description = "Your authorized keys. Be sure to chomp() it first"
   type        = "list"
+  default     = []
 }
 
 variable "authorized_users" {
   description = "Your authorized users"
   type        = "list"
+  default     = []
 }
 
 variable "stackscript_id" {
-  default = ""
+  default = "1"
 }
 
 variable "stackscript_data" {
-  description = "Map of required StackScript UDF data."
+  description = "Optional map of StackScript UDF data."
   type        = "map"
+  default     = {}
 }
