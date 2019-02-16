@@ -52,7 +52,8 @@ variable "authorized_users" {
 }
 
 variable "stackscript_id" {
-  default = "1"
+  description = "The ID of the StackScript you want to use"
+  default     = "1"
 }
 
 variable "stackscript_data" {
