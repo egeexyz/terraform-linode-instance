@@ -25,7 +25,7 @@ variable "image" {
 
 variable "label" {
   description = "Optional label to display for the instance"
-  default     = "Created by Terraform"
+  default     = "Created-by-Terraform"
 }
 
 variable "tags" {
@@ -53,7 +53,7 @@ variable "authorized_users" {
 
 variable "stackscript_id" {
   description = "The ID of the StackScript you want to use"
-  default     = "1"
+  default     = "0"
 }
 
 variable "stackscript_data" {
